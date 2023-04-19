@@ -1,0 +1,86 @@
+:root {
+	/* Font Families */
+	--font-family-display: --font-family-default;
+	--font-family-button: --font-family-default;
+	--font-family-body: --font-family-default;
+
+	/* Body */
+	--font-size-body-m: 1rem;
+	--font-size-body-s: calc((14 / 16) * 1rem);
+	--font-line-height-body-m: calc((24 / 16) * 1rem);
+	--font-line-height-body-s: calc((20 / 16) * 1rem);
+	--font-size-calendar-day: calc((10 / 16) * 1rem);
+	--font-line-height-calendar-day: calc((14 / 16) * 1rem);
+
+	/* 404 */
+	--font-size-404-s: functions.rem(104);
+	--font-line-height-404-s: functions.rem(112);
+	--font-size-404-m: functions.rem(180);
+	--font-line-height-404-m: functions.rem(188);
+
+	/* Input fields */
+	--font-size-input-m: calc((16 / 16) * 1rem);
+	--font-size-input-s: calc((14 / 16) * 1rem);
+	--font-line-height-input-m: calc((24 / 16) * 1rem);
+	--font-line-height-input-s: calc((20 / 16) * 1rem);
+
+	/* Date Picker */
+	--font-size-datepicker-month: calc((16 / 16) * 1rem);
+	--font-line-height-datepicker-month: calc((24 / 16) * 1rem);
+	--font-size-datepicker-day: calc((16 / 16) * 1rem);
+	--font-line-height-datepicker-day: calc((24 / 16) * 1rem);
+	--font-size-datepicker-weekday: calc((14 / 16) * 1rem);
+	--font-line-height-datepicker-weekday: calc((20 / 16) * 1rem);
+
+	/* Letter spacing */
+	--font-letter-spacing-subhead: calc((1 / 16) * 1rem);
+
+	/* Select */
+	--font-size-select: calc((16 / 16) * 1rem);
+	--font-line-height-select: calc((24 / 16) * 1rem);
+
+	/* Display Font Size and Line Height */
+	/* Deskop */
+	--font-size-desktop-display-xl: calc((40 / 16) * 1rem);
+	--font-size-desktop-display-l: calc((32 / 16) * 1rem);
+	--font-size-desktop-display-m: calc((28 / 16) * 1rem);
+	--font-size-desktop-display-s: calc((24 / 16) * 1rem);
+	--font-size-desktop-display-xs: calc((18 / 16) * 1rem);
+
+	--font-line-height-desktop-display-xl: calc((48 / 16) * 1rem);
+	--font-line-height-desktop-display-l: calc((40 / 16) * 1rem);
+	--font-line-height-desktop-display-m: calc((36 / 16) * 1rem);
+	--font-line-height-desktop-display-s: calc((32 / 16) * 1rem);
+	--font-line-height-desktop-display-xs: calc((32 / 16) * 1rem);
+
+	/* Mobile */
+	--font-size-mobile-display-xl: calc((28 / 16) * 1rem);
+	--font-size-mobile-display-l: calc((24 / 16) * 1rem);
+	--font-size-mobile-display-m: calc((20 / 16) * 1rem);
+	--font-size-mobile-display-s: calc((18 / 16) * 1rem);
+	--font-size-mobile-display-xs: calc((16 / 16) * 1rem);
+
+	--font-line-height-mobile-display-xl: calc((36 / 16) * 1rem);
+	--font-line-height-mobile-display-l: calc((32 / 16) * 1rem);
+	--font-line-height-mobile-display-m: calc((32 / 16) * 1rem);
+	--font-line-height-mobile-display-s: calc((32 / 16) * 1rem);
+	--font-line-height-mobile-display-xs: calc((24 / 16) * 1rem);
+
+	/* Subhead */
+	--font-size-subhead: calc((14 / 16) * 1rem);
+	--font-line-height-subhead: calc((20 / 16) * 1rem);
+
+	/* Logo */
+	--font-size-logo: calc((20 / 16) * 1rem);
+	--font-line-height-logo: calc((32 / 16) * 1rem);
+
+	/* Buttons */
+	--font-size-button-m: calc((16 / 16) * 1rem);
+	--font-size-button-s: calc((14 / 16) * 1rem);
+
+	--font-line-height-button-m: calc((24 / 16) * 1rem);
+	--font-line-height-button-s: calc((20 / 16) * 1rem);
+
+	--font-weight-button: 500;
+	--font-weight-body: 400;
+}

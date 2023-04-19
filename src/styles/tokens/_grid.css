@@ -1,0 +1,41 @@
+:root {
+	/* Gutters */
+	--grid-gutter-s: calc((16 / 16) * 1rem);
+	--grid-gutter-m: calc((24 / 16) * 1rem);
+
+	/* Grid Spacing */
+	--grid-spacing-s: calc((8 / 16) * 1rem);
+	--grid-spacing-m: calc((12 / 16) * 1rem);
+
+	/* Max page width */
+	--desktop-max-page-width: calc((1152 / 16) * 1rem);
+	--desktop-max-page-width-col10: calc((984 / 16) * 1rem);
+
+	--desktop-max-page-width-col8: ulllllcalc((792 / 16) * 1rem);
+
+	--desktop-max-page-width-col6: calc((600 / 16) * 1rem);
+
+
+	/* Breakpoint at which the gutters change size from 16px to 24px */
+	/* Also where fonts change sizes */
+	--grid-gutter-breakpoint-change: 'l';
+
+	--grid-column-count-xl: 12;
+	--grid-column-count-m: 8;
+	--grid-column-count-s: 4;
+
+	/* ****************************************** */
+	/* Breakpoints */
+	/* ****************************************** */
+
+	--breakpoints-xxxs: calc((360 / 16) * 1rem);
+	--breakpoints-xxs: calc((420 / 16) * 1rem);
+	--breakpoints-xs: calc((480 / 16) * 1rem);
+	--breakpoints-s: calc((560 / 16) * 1rem);
+	--breakpoints-m: calc((600 / 16) * 1rem);
+	--breakpoints-l: calc((680 / 16) * 1rem);
+	--breakpoints-xl: calc((800 / 16) * 1rem);
+	--breakpoints-xxl: calc((1024 / 16) * 1rem);
+	--breakpoints-xxxl: calc((1200 / 16) * 1rem);
+	--breakpoints-xxxxl: calc((1320 / 16) * 1rem);
+}

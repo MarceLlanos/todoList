@@ -1,0 +1,141 @@
+/* 
+  ******************************************
+    Spacing Tokens
+  ******************************************
+*/
+:root {
+	/* Size nav */
+	--spacing-site-nav-vertical-s: calc((8 / 16) * 1rem);
+	--spacing-site-nav-vertical-m: calc((8 / 16) * 1rem);
+
+	/* 404 */
+	--spacing-404-top-xl: calc((88 / 16) * 1rem);
+	--spacing-404-bottom-xl: calc((200 / 16) * 1rem);
+	--spacing-404-top-m: calc((88 / 16) * 1rem);
+	--spacing-404-bottom-m: calc((200 / 16) * 1rem);
+	--spacing-404-top-s: calc((40 / 16) * 1rem);
+	--spacing-404-bottom-s: calc((80 / 16) * 1rem);
+
+	/* Icon Buttons */
+	--spacing-button-icon-horizontal-l: calc((12 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-icon-vertical-l: calc((12 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-icon-horizontal-m: calc((8 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-icon-vertical-m: calc((8 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-icon-horizontal-s: calc((4 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-icon-vertical-s: calc((4 / 16) * 1rem)
+		var(--size-border-button-default);
+
+	/* Buttons */
+	--spacing-button-default-horizontal-l: calc((16 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-default-vertical-l: calc((12 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-default-horizontal-m: calc((16 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-default-vertical-m: calc((8 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-default-horizontal-s: calc((12 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-default-vertical-s: calc((4 / 16) * 1rem)
+		var(--size-border-button-default);
+
+	/* Select */
+	--spacing-select-vertical: calc((12 / 16) * 1rem)
+		var(--size-border-input-default);
+	--spacing-select-horizontal-left: calc((8 / 16) * 1rem)
+		var(--size-border-input-default);
+	--spacing-select-horizontal-right: calc((12 / 16) * 1rem)
+		var(--size-border-input-default);
+
+	--spacing-button-with-icon-left-l: calc((12 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-with-icon-right-l: calc((16 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-with-icon-vertical-l: calc((12 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-with-icon-left-m: calc((12 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-with-icon-right-m: calc((16 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-with-icon-vertical-m: calc((8 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-with-icon-left-s: calc((8 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-with-icon-right-s: calc((12 / 16) * 1rem)
+		var(--size-border-button-default);
+	--spacing-button-with-icon-vertical-s: calc((4 / 16) * 1rem)
+		var(--size-border-button-default);
+
+	/* Input fields */
+	--spacing-input-horizontal-m: calc((12 / 16) * 1rem)
+		var(--size-border-input-default);
+	--spacing-input-vertical-m: calc((12 / 16) * 1rem)
+		var(--size-border-input-default);
+
+	/* Input fields */
+	--spacing-time-input-horizontal: calc((8 / 16) * 1rem)
+		var(--size-border-input-default);
+	--spacing-time-input-vertical: calc((4 / 16) * 1rem)
+		var(--size-border-input-default);
+
+	/* Date Picker */
+	--spacing-datepicker-weekday-horizontal-m: calc((8 / 16) * 1rem);
+	--spacing-datepicker-weekday-vertical-m: calc((8 / 16) * 1rem);
+	--spacing-datepicker-day-horizontal-m: calc((8 / 16) * 1rem)
+		var(--size-border-datepicker-day);
+	--spacing-datepicker-day-vertical-m: calc((8 / 16) * 1rem)
+		var(--size-border-datepicker-day);
+
+	--spacing-input-horizontal-s: calc((12 / 16) * 1rem)
+		var(--size-border-input-default);
+	--spacing-input-vertical-s: calc((8 / 16) * 1rem)
+		var(--size-border-input-default);
+
+	/* Search bar */
+	--spacing-search-bar-horizontal: calc((8 / 16) * 1rem)
+		var(--size-border-input-default);
+	--spacing-search-bar-vertical: calc((8 / 16) * 1rem)
+		var(--size-border-input-default);
+	--spacing-mobile-search-bar-list: calc((112 / 16) * 1rem);
+
+	/* Component Spacing Tokens */
+	--spacing-c-01: calc((2 / 16) * 1rem);
+	--spacing-c-02: calc((4 / 16) * 1rem);
+	--spacing-c-03: calc((8 / 16) * 1rem);
+	--spacing-c-04: calc((12 / 16) * 1rem);
+	--spacing-c-05: calc((16 / 16) * 1rem);
+	--spacing-c-06: calc((20 / 16) * 1rem);
+	--spacing-c-07: calc((24 / 16) * 1rem);
+	--spacing-c-08: calc((32 / 16) * 1rem);
+	--spacing-c-09: calc((40 / 16) * 1rem);
+	--spacing-c-10: calc((48 / 16) * 1rem);
+	--spacing-c-11: calc((56 / 16) * 1rem);
+	--spacing-c-12: calc((64 / 16) * 1rem);
+
+	/* Layout Spacing Tokens */
+	--spacing-l-01: calc((8 / 16) * 1rem);
+	--spacing-l-02: calc((16 / 16) * 1rem);
+	--spacing-l-03: calc((24 / 16) * 1rem);
+	--spacing-l-04: calc((32 / 16) * 1rem);
+	--spacing-l-05: calc((48 / 16) * 1rem);
+	--spacing-l-06: calc((64 / 16) * 1rem);
+	--spacing-l-07: calc((88 / 16) * 1rem);
+	--spacing-l-08: calc((120 / 16) * 1rem);
+	--spacing-l-09: calc((160 / 16) * 1rem);
+	--spacing-l-10: calc((200 / 16) * 1rem);
+
+	/* Main top spacing */
+	--spacing-main-top-s: calc((24 / 16) * 1rem);
+	--spacing-main-top-m: calc((40 / 16) * 1rem);
+
+	/* Modals top spacing */
+	--spacing-modal-top-small-height: calc((16 / 16) * 1rem);
+	--spacing-modal-top-s: calc((88 / 16) * 1rem);
+	--spacing-modal-top-m: calc((144 / 16) * 1rem);
+	--spacing-modal-top-xl: calc((200 / 16) * 1rem);
+}

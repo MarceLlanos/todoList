@@ -1,0 +1,302 @@
+@import url('../base/_colorsPalette.css');
+
+/* 
+    ******************************************
+        Color Tokens
+    ****************************************** 
+*/
+:root {
+	/* Autocomplete mark background */
+	--color-background-autocomplete-selection: var(--grey200);
+	--color-background-mobile-search-bar-background: var(--grey50);
+	--color-background-cookie-consent: var(--grey00);
+
+	/* Todo Item Scroll Highlight */
+	--color-background-todo-item-scroll-to-default: var(--grey00);
+	--color-background-todo-item-scroll-to-highlight: var(--grey200);
+
+	/* Links */
+	--color-background-link-default: var(--grey00);
+	--color-background-link-hover: var(--primary50);
+	--color-background-link-active: var(--primary100);
+
+	/* Input fields */
+	--color-background-input: var(--grey00);
+
+	/* Validation */
+	--color-background-validation-error: var(--danger50);
+	--color-background-validation-success: var(--success50);
+
+	/* Select */
+	--color-background-select: var(--grey00);
+
+	/* Date picker */
+	--color-background-datepicker-enabled: var(--grey00);
+	--color-background-datepicker-selected: var(--primary600);
+	--color-background-datepicker-hover: var(--grey100);
+	--color-background-datepicker-today: var(--grey100);
+	--color-background-datepicker-disabled: var(--grey00);
+	--color-background-datepicker-navbutton: var(--grey600);
+
+	/* Buttons */
+	--color-background-outlined-enabled: transparent;
+	--color-background-outlined-hover: var(--grey50);
+	--color-background-outlined-active: var(--grey100);
+	--color-background-outlined-focus: var(--grey50);
+	--color-background-outlined-focus-polyfill: var(--grey100);
+	--color-background-outlined-disabled: transparent;
+
+	--color-background-text-button-enabled: transparent;
+	--color-background-text-button-hover: var(--grey50);
+	--color-background-text-button-active: var(--grey100);
+	--color-background-text-button-focus: var(--grey50);
+	--color-background-text-button-focus-polyfill: var(--grey100);
+	--color-background-text-button-disabled: transparent;
+
+	--color-background-todo-meta-enabled: transparent;
+	--color-background-todo-meta-hover: var(--grey50);
+	--color-background-todo-meta-active: var(--grey100);
+	--color-background-todo-meta-focus: transparent;
+	--color-background-todo-meta-focus-polyfill: var(--grey100);
+	--color-background-todo-meta-disabled: transparent;
+
+	--color-background-primary-enabled: var(--primary600);
+	--color-background-primary-hover: var(--primary500);
+	--color-background-primary-active: var(--primary700);
+	--color-background-primary-focus: var(--primary600);
+	--color-background-primary-focus-polyfill: var(--primary700);
+	--color-background-primary-disabled: var(--grey500);
+
+	/* Check Button */
+	--color-background-todo-checkbox-enabled: var(--grey00);
+	--color-background-todo-checkbox-enabled-focus: var(--grey50);
+	--color-background-todo-checkbox-enabled-active: var(--grey100);
+	--color-background-todo-checkbox-enabled-focus-polyfill: var(--grey100);
+	--color-background-todo-checkbox-enabled-hover: var(--primary50);
+	--color-background-todo-checkbox-enabled-disabled: var(--grey00);
+	--color-background-todo-checkbox-completed: var(--primary600);
+	--color-background-todo-checkbox-completed-focus: var(--primary600);
+	--color-background-todo-checkbox-completed-active: var(--primary700);
+	--color-background-todo-checkbox-completed-focus-polyfill: var(--primary700);
+	--color-background-todo-checkbox-completed-hover: var(--primary500);
+	--color-background-todo-checkbox-completed-disabled: var(--grey500);
+
+	/* Checkbox */
+	--color-background-checkbox-enabled: var(--grey00);
+	--color-background-checkbox-focus: var(--grey00);
+	--color-background-checkbox-focus-polyfill: var(--grey00);
+	--color-background-checkbox-hover: var(--primary50);
+	--color-background-checkbox-disabled: var(--grey00);
+	--color-background-checkbox-checked-enabled: var(--primary600);
+	--color-background-checkbox-checked-focus: var(--primary600);
+	--color-background-checkbox-checked-focus-polyfill: var(--primary600);
+	--color-background-checkbox-checked-hover: var(--primary500);
+	--color-background-checkbox-checked-disabled: var(--grey500);
+
+	/* Search bar */
+	--color-background-input-enabled: var(--grey00);
+	--color-background-search-bar-mobile: var(--grey00);
+	--color-background-search-bar-enabled: var(--grey50);
+	--color-background-search-bar-active: var(--grey00);
+
+	/* Sidebar items */
+	--color-background-sidebar-item-selected: var(--grey100);
+	--color-background-sidebar-item-hover: var(--grey100);
+
+	--color-background-modal-overlay: rgba(102, 102, 102, 0.4);
+	--color-background-modal-inner: var(--grey00);
+
+	/* Dropdown items */
+	--color-background-dropdown-inner: var(--grey00);
+	--color-background-dropdown-item-enabled: var(--grey00);
+	--color-background-dropdown-item-selected: var(--grey50);
+	--color-background-dropdown-item-hover: var(--grey100);
+
+	/* Page Backgrounds */
+	--color-background-algolia-link: var(--grey50);
+
+	/* Page Backgrounds */
+	--color-background-page-lightest: var(--grey00);
+	--color-background-page-lighter: var(--grey50);
+	--color-background-page-light: var(--grey100);
+
+	/* Avatars */
+	--color-background-placeholder: var(--grey100);
+	--color-background-placeholder-stop-edge: var(--grey100);
+	--color-background-placeholder-stop-middle: var(--grey300);
+
+	/* Avatars */
+	--color-background-avatar-on-white: var(--grey300);
+	--color-background-avatar-on-grey: var(--grey400);
+
+	/* Date picker */
+	--color-border-datepicker-enabled: var(--grey300);
+	--color-border-datepicker-selected: var(--primary600);
+	--color-border-datepicker-hover: var(--grey300);
+	--color-border-datepicker-today: var(--grey300);
+	--color-border-datepicker-disabled: var(--grey300);
+
+	/* Checkbox Borders */
+	--color-border-checkbox-enabled: var(--grey600);
+	--color-border-checkbox-focus: var(--grey900);
+	--color-border-checkbox-focus-polyfill: var(--grey900);
+	--color-border-checkbox-hover: var(--grey900);
+	--color-border-checkbox-disabled: var(--grey500);
+	--color-border-checkbox-checked-enabled: var(--primary600);
+	--color-border-checkbox-checked-hover: var(--primary500);
+	--color-border-checkbox-checked-focus: var(--primary900);
+	--color-border-checkbox-checked-focus-polyfill: var(--primary600);
+	--color-border-checkbox-checked-disabled: var(--grey600);
+
+	/* Validation */
+	--color-border-validation-error: var(--danger700);
+	--color-border-validation-success: var(--success600);
+
+	/* Check Button Borders */
+	--color-border-todo-checkbox-enabled: var(--grey600);
+	--color-border-todo-checkbox-enabled-focus: var(--grey900);
+	--color-border-todo-checkbox-enabled-hover: var(--primary600);
+	--color-border-todo-checkbox-enabled-disabled: var(--grey500);
+	--color-border-todo-checkbox-completed: var(--primary600);
+	--color-border-todo-checkbox-completed-focus: var(--primary900);
+	--color-border-todo-checkbox-completed-hover: var(--primary500);
+	--color-border-todo-checkbox-completed-disabled: var(--grey600);
+
+	--color-border-outlined-enabled: var(--grey700);
+	--color-border-outlined-hover: var(--grey700);
+	--color-border-outlined-active: var(--grey900);
+	--color-border-outlined-focus: var(--grey900);
+	--color-border-outlined-focus-polyfill: var(--grey900);
+	--color-border-outlined-disabled: var(--grey500);
+
+	--color-border-icon-button-enabled: transparent;
+	--color-border-icon-button-hover: var(--grey100);
+	--color-border-icon-button-active: var(--grey200);
+	--color-border-icon-button-focus: var(--grey900);
+	--color-border-icon-button-focus-polyfill: transparent;
+	--color-border-icon-button-disabled: transparent;
+
+	--color-border-primary-enabled: var(--primary600);
+	--color-border-primary-hover: var(--primary500);
+	--color-border-primary-active: var(--primary700);
+	--color-border-primary-focus: var(--primary900);
+	--color-border-primary-focus-polyfill: transparent;
+	--color-border-primary-disabled: var(--grey500);
+
+	--color-border-text-button-enabled: transparent;
+	--color-border-text-button-hover: transparent;
+	--color-border-text-button-active: transparent;
+	--color-border-text-button-focus: var(--grey900);
+	--color-border-text-button-focus-polyfill: transparent;
+	--color-border-text-button-disabled: transparent;
+
+	--color-border-select-enabled: var(--grey300);
+	--color-border-select-hover: var(--grey300);
+	--color-border-select-active: var(--grey900);
+	--color-border-select-focus: var(--grey900);
+	--color-border-select-focus-polyfill: var(--grey300);
+	--color-border-select-disabled: var(--grey500);
+
+	--color-border-input-enabled: var(--grey300);
+	--color-border-input-hover: var(--grey300);
+	--color-border-input-active: var(--grey900);
+	--color-border-input-focus: var(--grey900);
+	--color-border-input-focus-polyfill: var(--grey300);
+	--color-border-input-disabled: var(--grey500);
+
+	/* Border Colors */
+	--color-border-header: var(--grey300);
+	--color-border-components-default: var(--grey300);
+
+	/* Avatars */
+	--color-border-avatar-on-white: var(--grey200);
+	--color-border-avatar-on-grey: var(--grey300);
+
+	/* Dividers */
+	--color-divider-on-white: var(--grey200);
+	--color-divider-on-grey: var(--grey300);
+
+	/* Default icon */
+	--color-icon-default: var(--grey600);
+	--color-icon-default-active: var(--grey800);
+
+	/* Check Button Icon */
+	--color-icon-todo-checkbox-enabled: transparent;
+	--color-icon-todo-checkbox-enabled-focus: var(--grey900);
+	--color-icon-todo-checkbox-enabled-hover: var(--primary600);
+	--color-icon-todo-checkbox-enabled-disabled: transparent;
+	--color-icon-todo-checkbox-completed: var(--grey00);
+	--color-icon-todo-checkbox-completed-focus: var(--grey00);
+	--color-icon-todo-checkbox-completed-hover: var(--grey00);
+	--color-icon-todo-checkbox-completed-disabled: var(--grey00);
+
+	/* Spinner */
+	--color-icon-spinner-default: var(--grey00);
+	--color-icon-spinner-dark: var(--grey900);
+
+	--color-icon-button-primary-enabled: var(--grey00);
+	--color-icon-button-primary-hover: var(--grey00);
+	--color-icon-button-primary-active: var(--grey00);
+	--color-icon-button-primary-focus: var(--grey00);
+	--color-icon-button-primary-disabled: var(--grey00);
+
+	--color-icon-button-outlined-enabled: var(--grey900);
+	--color-icon-button-outlined-hover: var(--grey900);
+	--color-icon-button-outlined-active: var(--grey900);
+	--color-icon-button-outlined-focus: var(--grey900);
+	--color-icon-button-outlined-disabled: var(--grey500);
+
+	--color-icon-button-text-enabled: var(--grey900);
+	--color-icon-button-text-hover: var(--grey900);
+	--color-icon-button-text-active: var(--grey900);
+	--color-icon-button-text-focus: var(--grey900);
+	--color-icon-button-text-disabled: var(--grey500);
+
+	/* Checkbox Icon */
+	--color-icon-checkbox: var(--grey00);
+
+	/* Text */
+	--color-text-body-default: var(--grey900);
+	--color-text-body-subdued: var(--grey700);
+	--color-text-body-error: var(--danger600);
+	--color-text-display-default: var(--grey900);
+	--color-text-subhead-default: var(--grey700);
+	--color-text-subhead-dark: var(--grey900);
+	--color-text-button-primary-enabled: var(--primary50);
+	--color-text-button-primary-disabled: var(--grey00);
+	--color-text-button-outlined-enabled: var(--grey900);
+	--color-text-button-outlined-disabled: var(--grey700);
+	--color-text-button-text-enabled: var(--grey900);
+	--color-text-button-text-disabled: var(--grey700);
+
+	/* Links */
+	--color-text-link-default: var(--primary600);
+	--color-text-link-hover: var(--primary500);
+	--color-text-link-active: var(--primary700);
+
+	/* 404 */
+	--color-text-404: var(--grey200);
+
+	/* Validation */
+	--color-text-validation-error: var(--danger900);
+	--color-text-validation-success: var(--success900);
+
+	/* Input fields */
+	--color-text-input-enabled: var(--grey700);
+	--color-text-input-active: var(--grey900);
+	--color-text-input-disabled: var(--grey500);
+
+	/* Select */
+	--color-text-select-enabled: var(--grey700);
+	--color-text-select-active: var(--grey900);
+	--color-text-select-disabled: var(--grey500);
+
+	/* Date picker */
+	--color-text-datepicker-enabled: var(--grey900);
+	--color-text-datepicker-selected: var(--grey00);
+	--color-text-datepicker-hover: var(--grey900);
+	--color-text-datepicker-today: var(--grey900);
+	--color-text-datepicker-disabled: var(--grey500);
+	--color-text-datepicker-weekday: var(--grey600);
+	--color-text-datepicker-monthname: var(--grey900);
+}

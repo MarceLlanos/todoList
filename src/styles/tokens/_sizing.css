@@ -1,0 +1,82 @@
+/* ****************************************** */
+/* Sizing Tokens */
+/* ****************************************** */
+:root {
+	/* Logo */
+	--size-logo-vertical-s: calc((40 / 16) * 1rem);
+	--size-logo-horizontal-s: calc((40 / 16) * 1rem) + calc((8 / 16) * 1rem);
+	--size-logo-vertical-xl: calc((56 / 16) * 1rem);
+	--size-logo-horizontal-xl: calc((144 / 16) * 1rem) + calc((12 / 16) * 1rem);
+
+	/* Site nav */
+	--size-site-nav-s: calc((56 / 16) * 1rem);
+	--size-site-nav-m: calc((64 / 16) * 1rem);
+
+	/* Component border sizes */
+	--size-border-components-default: calc((1 / 16) * 1rem);
+
+	/* Date Picker Day */
+	--size-border-datepicker-day: calc((1 / 16) * 1rem);
+
+	/* Buttons */
+	--size-border-button-default: calc((1 / 16) * 1rem);
+	--size-border-input-default: calc((1 / 16) * 1rem);
+	--size-border-select-default: calc((1 / 16) * 1rem);
+	--size-button-icon-l: calc((48 / 16) * 1rem);
+	--size-button-icon-m: calc((40 / 16) * 1rem);
+	--size-button-icon-s: calc((32 / 16) * 1rem);
+	--size-button-l: calc((48 / 16) * 1rem);
+	--size-button-m: calc((40 / 16) * 1rem);
+	--size-button-s: calc((32 / 16) * 1rem);
+	--size-button-todo: calc((24 / 16) * 1rem);
+	--size-button-todo-search: calc((20 / 16) * 1rem);
+
+	/* Dividers */
+	--size-divider-m: calc((2 / 16) * 1rem);
+	--size-divider-s: calc((1 / 16) * 1rem);
+
+	/* Icons */
+	--size-icon-m: calc((24 / 16) * 1rem);
+	--size-icon-s: calc((20 / 16) * 1rem);
+
+	/* Input fields */
+	--size-input-m: calc((40 / 16) * 1rem);
+	--size-input-s: calc((32 / 16) * 1rem);
+
+	/* Modal Windows */
+	--size-modal-xl: calc((520 / 16) * 1rem);
+
+	/* Cookie consent */
+	--size-cookie-consent-xl: calc((380 / 16) * 1rem);
+
+	/* Account pages */
+	--size-account-page-xl: calc((600 / 16) * 1rem);
+
+	/* Dropdowns */
+	--size-dropdown-projects: calc((240 / 16) * 1rem);
+	--size-dropdown-labels: calc((240 / 16) * 1rem);
+	--size-dropdown-colors-width: calc((240 / 16) * 1rem);
+	--size-dropdown-colors-height: calc((388 / 16) * 1rem);
+	--size-dropdown-datepicker: calc((296 / 16) * 1rem);
+	--size-dropdown-current-user: calc((240 / 16) * 1rem);
+
+	/* Border Radius */
+	--border-radius-button-default: 3px;
+	--border-radius-components-default: 3px;
+	--border-radius-button-text: 1px;
+	--border-radius-input-default: 3px;
+	--border-radius-checkbox: 3px;
+
+	/* Avatars */
+	--border-avatar-default: calc((2 / 16) * 1rem);
+	--size-avatar-m: calc((40 / 16) * 1rem);
+	--size-avatar-s: calc((24 / 16) * 1rem);
+	--size-profile-page-avatar-xl: calc((80 / 16) * 1rem);
+	--size-profile-page-avatar-m: calc((64 / 16) * 1rem);
+
+	/* Todo Button Icon */
+	--border-todo-checkbox: calc((1 / 16) * 1rem);
+
+	/* Checkbox */
+	--border-checkbox: calc((1 / 16) * 1rem);
+}
