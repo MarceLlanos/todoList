@@ -1,22 +1,24 @@
-import React from 'react';
-import './styles/LoginPage.css';
-
-import { FooterLogin, LinkButton } from '@/styled-components';
 import { Divider } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+
+import { createUserCredentialAdapted } from '@/adapters';
+import { PublicRoutes, UserFirebase } from '@/models';
+import { useAppDispatch } from '@/redux';
+import { loginUser } from '@/redux/slices/authUser.slice';
+import { loginWithGoogleAccount } from '@/services';
+import { FooterLogin, LinkButton } from '@/styled-components';
+import { UserCredential } from 'firebase/auth';
 import { SingInWithGoogle } from '../components';
 import { OrDivider } from '../components/OrDivider';
 import { LoginForm } from './components';
-import { UserCredential } from 'firebase/auth';
-import { loginWithGoogleAccount } from '@/services';
-import { UserFirebase } from '@/models';
-import { createUserCredentialAdapted } from '@/adapters';
-import { loginUser } from '@/redux/slices/authUser.slice';
-import { useAppDispatch } from '@/redux';
+
+import '../styles/Authentitcation.css';
 
 export interface LoginPageProps {}
 
 const LoginPage: React.FC<LoginPageProps> = () => {
 	const dispatch = useAppDispatch();
+	const navigate = useNavigate();
 
 	const handleGoogleLogin = async () => {
 		try {
@@ -33,6 +35,14 @@ const LoginPage: React.FC<LoginPageProps> = () => {
 		} catch (error) {
 			console.log(error);
 		}
+	};
+
+	const onClickSingUp = () => {
+		navigate(`/${PublicRoutes.REGISTER}`, { replace: true });
+	};
+
+	const onForgotPasswordClick = () => {
+		navigate(`/${PublicRoutes.FORGOTPASSWORD}`, { replace: true });
 	};
 
 	return (
@@ -54,12 +64,14 @@ const LoginPage: React.FC<LoginPageProps> = () => {
 				<LoginForm />
 
 				<nav className='navButton'>
-					<LinkButton>Forgot password?</LinkButton>
+					<LinkButton onClick={onForgotPasswordClick}>
+						Forgot password?
+					</LinkButton>
 				</nav>
 				<Divider light />
 				<FooterLogin>
 					<p>Don’t have an account?</p>
-					<LinkButton>Sign up</LinkButton>
+					<LinkButton onClick={onClickSingUp}>Sign up</LinkButton>
 				</FooterLogin>
 			</section>
 		</>

@@ -1,22 +1,22 @@
 .orContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .orDivider {
-    text-align: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
+	text-align: center;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
 .dividerLeft {
-    border-top: 1px solid var(--grey200);
-    width: 100%;
+	border-top: 1px solid var(--grey200);
+	width: 100%;
 }
 
 .dividerRight {
-    border-top: 1px solid var(--grey200);
-    width: 100%;
+	border-top: 1px solid var(--grey200);
+	width: 100%;
 }

@@ -1,2 +1,38 @@
-.authentitcation {
+@import url('../../../styles/base/_colorsPalette.css');
+@import url('../../../styles/tokens/_spacing.css');
+@import url('../../../styles/tokens/_sizing.css');
+@import url('../../../styles/tokens/_fonts.css');
+@import url('../../../styles/tokens/_grid.css');
+
+.login {
+    background-color: var(--grey00);
+    border-radius: 3;
+    margin-top: var(--spacing-l-03);
+    margin-bottom: var(--spacing-l-06);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--size-account-page-xl);
+
+    padding: 0 var(--spacing-c-05);
+    width: 100%;
+}
+
+@media screen and (min-width: 680px) {
+    .login {
+        border: 1px solid var(--grey300);
+        border-radius: 3px;
+        padding: var(--spacing-c-09);
+        margin-top: var(--spacing-l-07);
+        margin-bottom: var(--spacing-l-08);
+    }
+
+    .title {
+        font-size: var(--font-size-desktop-display-m);
+        line-height: var(--font-line-height-desktop-display-m);
+        margin-bottom: var(--spacing-c-09);
+    }
+
+    .googleBtn {
+        margin-bottom: var(--spacing-c-07);
+    }
 }
