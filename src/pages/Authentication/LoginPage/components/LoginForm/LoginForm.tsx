@@ -58,7 +58,7 @@ const LoginForm: React.FC<LoginFormProps> = () => {
 			>
 				<TextField
 					id='outlined-email-input'
-					label='Correo electrónico*'
+					label='Email*'
 					type='email'
 					autoComplete='email'
 					autoCorrect='off'
@@ -67,14 +67,14 @@ const LoginForm: React.FC<LoginFormProps> = () => {
 					aria-describedby='email-validation'
 					aria-required='true'
 					{...register('email', {
-						required: 'Email es requerido',
+						required: 'Email is required',
 						pattern: /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+[.]{1}[a-zA-Z]{2,}$/,
 					})}
 					error={errors.email ? true : false}
 				/>
 				{errors.email && (
 					<Alert severity='error' id='email-validation' aria-hidden={true}>
-						<strong>Error:</strong> Debes ingresar un email valido.
+						<strong>Error:</strong> Please enter a valid email.
 					</Alert>
 				)}
 
@@ -94,8 +94,7 @@ const LoginForm: React.FC<LoginFormProps> = () => {
 				/>
 				{errors.password && (
 					<Alert severity='error' id='password-validation' aria-hidden={true}>
-						<strong>Error:</strong> Debes ingresar una constraseña de mas de 5
-						caracteres.
+						<strong>Error:</strong> Please your password must to contain 5 o more characteres.
 					</Alert>
 				)}
 				<PrimaryButton className='mt-3' type='submit'>

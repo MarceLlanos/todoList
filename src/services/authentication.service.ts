@@ -48,4 +48,4 @@ export const logput = async () => {
 	const logout = await signOut(auth);
 
 	return currentUserUid !== '' && logout;
-}
+};
