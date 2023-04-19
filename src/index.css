@@ -1,69 +1,51 @@
-:root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
+@import url('./styles/tokens/_colors.css');
+@import url('./styles/tokens/_fonts.css');
+
+html,
+body {
+	background-color: var(--color-background-page-lightest);
+	color: var(--color-text-body-default);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,
+		system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-weight: 400;
-
-	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
-
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
+	font-style: normal;
+	font-size: 100%;
+	line-height: var(--font-line-height-body-m);
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%;
 }
 
-a {
-	font-weight: 500;
-	color: #646cff;
-	text-decoration: inherit;
-}
-a:hover {
-	color: #535bf2;
-}
-
-body {
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	padding: 0;
 	margin: 0;
+}
+
+.columnContainerCentered {
 	display: flex;
-	place-items: center;
-	min-width: 320px;
-	min-height: 100vh;
+	justify-content: center;
+	flex-direction: column;
 }
 
-h1 {
-	font-size: 3.2em;
-	line-height: 1.1;
+.navButton {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 }
 
-button {
-	border-radius: 8px;
-	border: 1px solid transparent;
-	padding: 0.6em 1.2em;
-	font-size: 1em;
-	font-weight: 500;
-	font-family: inherit;
-	background-color: #1a1a1a;
-	cursor: pointer;
-	transition: border-color 0.25s;
-}
-button:hover {
-	border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-	outline: 4px auto -webkit-focus-ring-color;
+.mt-3 {
+	margin-top: 20px;
 }
 
-@media (prefers-color-scheme: light) {
-	:root {
-		color: #213547;
-		background-color: #ffffff;
-	}
-	a:hover {
-		color: #747bff;
-	}
-	button {
-		background-color: #f9f9f9;
-	}
+.mb-3 {
+	margin-bottom: 20px;
 }

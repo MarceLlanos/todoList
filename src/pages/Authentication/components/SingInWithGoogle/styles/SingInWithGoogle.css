@@ -1,0 +1,17 @@
+@import url('../../../../../styles/tokens/_sizing.css');
+@import url('../../../../../styles/tokens/_spacing.css');
+
+.signInWithGoogle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.googleIcon {
+    width: var(--size-icon-m);
+    height: var(--size-icon-m);
+    display: inline-block;
+    position: static;
+    margin-right: var(--spacing-c-05);
+}

@@ -1,0 +1,88 @@
+/*
+  ******************************************
+    Box Shadows
+  ******************************************
+*/
+
+:root {
+	--shadow-button-outlined-focus: {
+		box-shadow: 0px 0px 3px var(--grey200);
+	}
+
+	--shadow-input-focus: {
+		box-shadow: 0px 0px 0px 3px var(--grey200);
+	}
+
+	--shadow-select-focus: {
+		box-shadow: 0px 0px 0px 3px var(--grey200);
+	}
+
+	--shadow-button-add-new-focus: {
+		box-shadow: 0px 0px 0px 4px var(--grey50);
+		box-shadow: 0px 0px 0px 5px var(--grey900);
+		box-shadow: 0px 0px 0px 8px var(--grey200);
+	}
+
+	--shadow-button-text-focus: {
+		box-shadow: 0px 0px 0px 3px var(--grey200);
+	}
+
+	--shadow-datepicker-enabled: {
+		box-shadow: 0px 1px 0px 0px var(--grey300);
+	}
+
+	--shadow-datepicker-overdue: {
+		box-shadow: 0px 1px 0px 0px var(--danger500);
+	}
+
+	--shadow-button-primary-hover: {
+		box-shadow: 0px 2px 8px rgba(78, 145, 233, 0.3);
+		box-shadow: 0px 2px 2px rgba(78, 145, 233, 0.3);
+		box-shadow: 0px 1px 1px rgba(45, 113, 213, 0.4);
+	}
+
+	--shadow-button-primary-focus: {
+		box-shadow: 0px 0px 0px 3px var(--primary200);
+	}
+
+	--shadow-section: {
+		box-shadow: 0px 2px 12px rgba(153, 153, 153, 0.11);
+		box-shadow: 0px 2px 2px rgba(128, 128, 128, 0.11);
+		box-shadow: 0px 1px 1px rgba(128, 128, 128, 0.11);
+	}
+
+	--shadow-project-card: {
+		box-shadow: 0px 2px 12px rgba(153, 153, 153, 0.11);
+		box-shadow: 0px 2px 2px rgba(128, 128, 128, 0.11);
+		box-shadow: 0px 1px 1px rgba(128, 128, 128, 0.11);
+	}
+
+	--shadow-modal-background: {
+		box-shadow: 0px 5px 20px rgba(153, 153, 153, 0.15);
+		box-shadow: 0px 4px 8px rgba(102, 102, 102, 0.15);
+		box-shadow: 0px 2px 4px rgba(102, 102, 102, 0.15);
+		box-shadow: 0px 2px 2px rgba(102, 102, 102, 0.15);
+	}
+
+	--shadow-dropdown {
+		box-shadow: 0px 0px 20px rgba(153, 153, 153, 0.15);
+		box-shadow: 0px 0px 8px rgba(102, 102, 102, 0.15);
+		box-shadow: 0px 0px 4px rgba(102, 102, 102, 0.15);
+		box-shadow: 0px 0px 2px rgba(102, 102, 102, 0.15);
+	}
+
+	--shadow-cookie-consent-mobile {
+		box-shadow: 0px -1.09232px 10.3113px rgba(0, 0, 0, 0.0109397);
+		box-shadow: 0px -2.49404px 18.0937px rgba(0, 0, 0, 0.0205689);
+		box-shadow: 0px -4.61495px 25.9728px rgba(0, 0, 0, 0.0303445);
+		box-shadow: 0px -8.90292px 37.7041px rgba(0, 0, 0, 0.0426841);
+		box-shadow: 0px -26px 72px rgba(0, 0, 0, 0.07);
+	}
+
+	--shadow-cookie-consent-desktop {
+		box-shadow: 0px 0px 20px rgba(153, 153, 153, 0.15);
+		box-shadow: 0px 0px 8px rgba(102, 102, 102, 0.15);
+		box-shadow: 0px 0px 4px rgba(102, 102, 102, 0.15);
+		box-shadow: 0px 0px 2px rgba(102, 102, 102, 0.15);
+	}
+}
