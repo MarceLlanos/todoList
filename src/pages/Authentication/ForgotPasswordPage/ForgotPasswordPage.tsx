@@ -6,7 +6,7 @@ import '../styles/Authentitcation.css';
 
 export interface ForgotPasswordPageProps {}
 
-const ForgotPasswordPage : React.FC<ForgotPasswordPageProps> = () => {
+const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = () => {
 	return (
 		<>
 			<section
@@ -17,7 +17,8 @@ const ForgotPasswordPage : React.FC<ForgotPasswordPageProps> = () => {
 					Reset your password
 				</h1>
 				<p className='mb-3'>
-					Type in your email address below and we'll send you an email with instructions on how to create a new password.
+					Type in your email address below and we'll send you an email with
+					instructions on how to create a new password.
 				</p>
 				<form className='columnContainerCentered'>
 					<TextField
@@ -45,7 +46,6 @@ const ForgotPasswordPage : React.FC<ForgotPasswordPageProps> = () => {
 						Reset password
 					</PrimaryButton>
 				</form>
-			
 			</section>
 		</>
 	);

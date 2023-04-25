@@ -1,5 +1,5 @@
-export const PrivateDashboardRoutes = {
-    PRIVATE: 'private',
-    DASHBOARD: 'dashboard',
-    TASKBOARD: 'task-board'
+export const PrivateRoutes = {
+	PRIVATE: 'private',
+	DASHBOARD: 'dashboard',
+	TASKBOARD: 'task-board',
 };

@@ -94,7 +94,8 @@ const LoginForm: React.FC<LoginFormProps> = () => {
 				/>
 				{errors.password && (
 					<Alert severity='error' id='password-validation' aria-hidden={true}>
-						<strong>Error:</strong> Please your password must to contain 5 o more characteres.
+						<strong>Error:</strong> Please your password must to contain 5 o
+						more characteres.
 					</Alert>
 				)}
 				<PrimaryButton className='mt-3' type='submit'>

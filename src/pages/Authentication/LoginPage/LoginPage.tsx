@@ -2,7 +2,7 @@ import { Divider } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 import { createUserCredentialAdapted } from '@/adapters';
-import { PublicRoutes, UserFirebase } from '@/models';
+import { PrivateRoutes, PublicRoutes, UserFirebase } from '@/models';
 import { useAppDispatch } from '@/redux';
 import { loginUser } from '@/redux/slices/authUser.slice';
 import { loginWithGoogleAccount } from '@/services';
@@ -29,9 +29,9 @@ const LoginPage: React.FC<LoginPageProps> = () => {
 			)) as UserFirebase;
 
 			dispatch(loginUser(user));
-			// navigate(
-			// 	`/${PrivateRegisterRoutes.PRIVATE}/${PrivateRegisterRoutes.CREATEPROJECT}`
-			// );
+			navigate(`/${PrivateRoutes.PRIVATE}/${PrivateRoutes.DASHBOARD}`, {
+				replace: true,
+			});
 		} catch (error) {
 			console.log(error);
 		}

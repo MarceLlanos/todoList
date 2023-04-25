@@ -1,0 +1,32 @@
+.navbarTopContainer {
+	background-color: var(--grey00);
+	box-shadow: rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	display: inline-block;
+	margin: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	position: static;
+	width: 100%;
+}
+
+.navbar {
+	background-color: var(--grey100);
+	width: 100dvw;
+	height: 100dvh;
+	/* position: fixed; */
+}
+
+.navChildren {
+	background-color: var(--grey00);
+	width: calc(100%);
+	height: calc(100%);
+	padding: 40px;
+}
+
+.containerGrid {
+	width: calc(100dvw - 30px);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}

@@ -1,0 +1,37 @@
+.navbarContainer {
+	align-items: center;
+	padding: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100dvw;
+	position: static;
+
+	justify-content: center;
+}
+
+.logoButton {
+	padding: 0 !important;
+}
+
+.searchBarContainer {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: calc(100%);
+	margin-top: 5px;
+	position: relative;
+}
+
+.avatarContainer {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	position: absolute;
+	right: 0;
+}
+
+.avatarContainer > span {
+	margin-right: 10px;
+	color: var(--grey900);
+}

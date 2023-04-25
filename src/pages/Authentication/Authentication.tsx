@@ -13,15 +13,9 @@ export interface AuthenticationProps {}
 const Authentication: React.FC<AuthenticationProps> = () => {
 	return (
 		<PageNotFound>
-			<Route
-				path='/'
-				element={<Navigate to={`${PublicRoutes.LOGIN}`} />}
-			/>
+			<Route path='/' element={<Navigate to={`${PublicRoutes.LOGIN}`} />} />
 			<Route path={`${PublicRoutes.LOGIN}/*`} element={<LoginPage />} />
-			<Route
-				path={`${PublicRoutes.REGISTER}/*`}
-				element={<RegisterPage />}
-			/>
+			<Route path={`${PublicRoutes.REGISTER}/*`} element={<RegisterPage />} />
 			<Route
 				path={`${PublicRoutes.FORGOTPASSWORD}/*`}
 				element={<ForgotPasswordPage />}

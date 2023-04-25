@@ -1,5 +1,5 @@
 import { createUserCredentialAdapted } from '@/adapters';
-import { UserFirebase } from '@/models';
+import { PrivateRoutes, UserFirebase } from '@/models';
 import { useAppDispatch } from '@/redux';
 import { loginUser } from '@/redux/slices/authUser.slice';
 import { loginWithGoogleAccount } from '@/services';
@@ -30,9 +30,9 @@ const RegisterPage: React.FC<RegisterPageProps> = () => {
 
 			dispatch(loginUser(user));
 
-			// navigate(
-			// 	`/${PrivateRegisterRoutes.PRIVATE}/${PrivateRegisterRoutes.CREATEPROJECT}`
-			// );
+			navigate(`/${PrivateRoutes.PRIVATE}/${PrivateRoutes.DASHBOARD}`, {
+				replace: true,
+			});
 		} catch (error) {
 			console.log(error);
 		}

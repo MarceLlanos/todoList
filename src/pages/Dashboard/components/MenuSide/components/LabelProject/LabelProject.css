@@ -1,0 +1,38 @@
+.color {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-right: 8px;
+}
+
+.blue {
+	background-color: var(--primary600);
+}
+
+.cyan {
+	background-color: var(--cyan500);
+}
+
+.purple {
+	background-color: var(--purple400);
+}
+
+.lightBlue {
+	background-color: var(--primary300);
+}
+
+.green {
+	background-color: var(--success400);
+}
+
+.darkPurple {
+	background-color: var(--purple500);
+}
+
+.red {
+	background-color: var(--danger600);
+}
+
+.pink {
+	background-color: var(--danger300);
+}

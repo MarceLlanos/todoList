@@ -1,7 +1,15 @@
-import { AuthUserCredential, UserFirebase, UserFirebaseEmailPassword } from '@/models';
+import {
+	AuthUserCredential,
+	UserFirebase,
+	UserFirebaseEmailPassword,
+} from '@/models';
 import { useAppDispatch, useAppSelector } from '@/redux';
 import { registerAuthenticationByEmailPassword } from '@/redux/actions/userAuth.action';
-import { loginUser, singUpError, singUpUser } from '@/redux/slices/authUser.slice';
+import {
+	loginUser,
+	singUpError,
+	singUpUser,
+} from '@/redux/slices/authUser.slice';
 import { PrimaryButton } from '@/styled-components';
 import { Alert, TextField } from '@mui/material';
 import React, { useId } from 'react';
@@ -9,7 +17,11 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import './styles/RegisterForm.css';
 import { User } from 'firebase/auth';
 import { createUserAdapted } from '@/adapters';
-import { addDocument, loginWithEmailAndPassword, registerWithEmailAndPassword } from '@/services';
+import {
+	addDocument,
+	loginWithEmailAndPassword,
+	registerWithEmailAndPassword,
+} from '@/services';
 import { createUserEmailPasswordAdapted } from '@/adapters/userEmailPasswordAdapter.adapter';
 export interface RegisterFormProps {}
 
@@ -28,7 +40,9 @@ const RegisterForm: React.FC<RegisterFormProps> = () => {
 	> = async dataUser => {
 		try {
 			const data: User = await registerWithEmailAndPassword(dataUser);
-			const user: UserFirebase = (await createUserAdapted(data)) as UserFirebase;
+			const user: UserFirebase = (await createUserAdapted(
+				data
+			)) as UserFirebase;
 
 			dispatch(singUpUser(user));
 			await addDocument('user', {
@@ -36,7 +50,7 @@ const RegisterForm: React.FC<RegisterFormProps> = () => {
 				uid: user.uid,
 				email: user.email,
 				password: dataUser.password,
-				avatar: user.photo
+				avatar: user.photo,
 			});
 
 			isLogging &&
@@ -52,7 +66,7 @@ const RegisterForm: React.FC<RegisterFormProps> = () => {
 			dataUser = {
 				email: '',
 				password: '',
-				userName: ''
+				userName: '',
 			};
 		} catch (error) {
 			console.log(error);
@@ -61,8 +75,8 @@ const RegisterForm: React.FC<RegisterFormProps> = () => {
 
 	return (
 		<form
-				onSubmit={handleSubmit(handleSubmitRegister)}
-				className='columnContainerCentered'
+			onSubmit={handleSubmit(handleSubmitRegister)}
+			className='columnContainerCentered'
 		>
 			<TextField
 				id='outlined-name-input'
