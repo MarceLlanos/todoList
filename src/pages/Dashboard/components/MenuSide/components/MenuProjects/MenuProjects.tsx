@@ -7,8 +7,7 @@ import {
 	Collapse,
 	List,
 	ListItemButton,
-	ListItemIcon,
-	ListItemText,
+	ListItemText
 } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import { ModalComponent } from '../../../ModalComponent';
